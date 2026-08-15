@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/detail-oriented-design-system-2dc5866c-03f3-49dc-943a-52cd27489990/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/detail-oriented-design-system-2dc5866c-03f3-49dc-943a-52cd27489990/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/detail-oriented-design-system-2dc5866c-03f3-49dc-943a-52cd27489990/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/detail-oriented-design-system-2dc5866c-03f3-49dc-943a-52cd27489990/styles.css">
+  <script src="_ds/detail-oriented-design-system-2dc5866c-03f3-49dc-943a-52cd27489990/_ds_bundle.js"></script>
+  <style>
+    body{margin:0;}
+    a{color:var(--color-purple);text-decoration:none;}
+    a:hover{color:var(--color-pastel-teal);}
+    *:focus-visible{outline:2px solid var(--color-purple);outline-offset:3px;}
+    input::placeholder,textarea::placeholder{color:var(--color-text-faint);}
+    @keyframes doFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+  </style>
+</helmet>
+
+<div style="font-family:var(--font-body);background:var(--color-bg);color:var(--color-text);width:100%;min-height:100vh;overflow-x:hidden;">
+
+  <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;max-width:1300px;margin:0 auto;padding:24px 24px;">
+    <div style="display:flex;align-items:center;gap:12px;">
+      <img src="assets/icon.png" alt="Detail Oriented mark" style="width:32px;height:32px;object-fit:contain;"/>
+      <span style="font-weight:700;font-size:17px;letter-spacing:-0.01em;">detail oriented</span>
+    </div>
+    <x-import component-from-global-scope="DetailOrientedDesignSystem_2dc586.Button" variant="secondary" size="sm" href="mailto:heather@detailoriented.me" hint-size="auto,40px">Get in touch</x-import>
+  </div>
+
+  <div style="max-width:1300px;margin:0 auto;padding:32px 24px 80px;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:48px;align-items:center;position:relative;">
+    <div>
+      <h1 style="font-size:var(--text-hero);line-height:1.05;font-weight:800;letter-spacing:-0.02em;margin:0 0 24px;text-wrap:pretty;">Stop Wrestling with Messy Business Tech.</h1>
+      <p style="font-size:var(--text-lead);line-height:1.6;color:var(--color-text-muted);max-width:520px;margin:0 0 32px;text-wrap:pretty;">We build custom intake hubs, manage your web domains, and trim your bloated software bills so you can focus on your actual craft.</p>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;">
+        <x-import component-from-global-scope="DetailOrientedDesignSystem_2dc586.Button" variant="solid" size="lg" href="https://fantastical.app/heathertully/30-minute-intro-call" hint-size="auto,56px">Book a Free Strategy Call</x-import>
+        <x-import component-from-global-scope="DetailOrientedDesignSystem_2dc586.Button" variant="secondary" size="lg" href="#audit" hint-size="auto,56px">Audit Your Software Stack</x-import>
+      </div>
+    </div>
+    <div style="position:relative;display:flex;align-items:center;justify-content:center;">
+      <img src="assets/full-logo.png" alt="Detail Oriented" style="width:100%;max-width:360px;height:auto;animation:doFloat 6s ease-in-out infinite;"/>
+      <span style="position:absolute;left:8px;bottom:12px;width:14px;height:14px;border-radius:50%;background:var(--color-purple);"></span>
+      <span style="position:absolute;top:6px;right:0;width:0;height:0;border-left:9px solid transparent;border-right:9px solid transparent;border-bottom:15px solid var(--color-pastel-yellow);"></span>
+    </div>
+  </div>
+
+  <div id="starter-hub" style="max-width:1300px;margin:0 auto;padding:0 24px 96px;">
+    <x-import component-from-global-scope="DetailOrientedDesignSystem_2dc586.Card" style="padding:48px 40px;position:relative;" hint-size="100%,auto">
+      <span style="position:absolute;top:28px;right:28px;width:20px;height:20px;background:var(--color-pastel-pink);transform:rotate(45deg);"></span>
+      <span style="display:inline-block;font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--color-ink);background:var(--color-purple);padding:5px 12px;border-radius:var(--radius-pill);margin-bottom:20px;">Package #1</span>
+      <h2 style="font-size:var(--text-h1);font-weight:800;letter-spacing:-0.01em;margin:0 0 8px;">The Starter Hub &mdash; $199 / month</h2>
+      <p style="font-size:18px;color:var(--color-text-muted);margin:0 0 32px;max-width:560px;">Your entire online front door, managed 100% for you.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px 32px;margin-bottom:36px;max-width:900px;">
+        <div style="display:flex;gap:12px;align-items:flex-start;"><span style="width:8px;height:8px;margin-top:8px;background:var(--color-pastel-teal);flex:none;"></span><span style="font-size:16px;line-height:1.5;">Managed micro-site / landing hub (hosted on custom domain or detailoriented.me)</span></div>
+        <div style="display:flex;gap:12px;align-items:flex-start;"><span style="width:8px;height:8px;margin-top:8px;background:var(--color-pastel-coral);flex:none;"></span><span style="font-size:16px;line-height:1.5;">Digital booking &amp; client intake portals</span></div>
+        <div style="display:flex;gap:12px;align-items:flex-start;"><span style="width:8px;height:8px;margin-top:8px;background:var(--color-pastel-yellow);flex:none;"></span><span style="font-size:16px;line-height:1.5;">Software stack audit &mdash; identifying &amp; cutting redundant app costs</span></div>
+        <div style="display:flex;gap:12px;align-items:flex-start;"><span style="width:8px;height:8px;margin-top:8px;background:var(--color-purple);flex:none;"></span><span style="font-size:16px;line-height:1.5;">100% managed maintenance, SSL security &amp; domain support</span></div>
+      </div>
+      <x-import component-from-global-scope="DetailOrientedDesignSystem_2dc586.Button" variant="solid" size="lg" href="https://fantastical.app/heathertully/30-minute-intro-call" hint-size="auto,56px">Launch Your Hub &mdash; $199/mo</x-import>
+    </x-import>
+  </div>
+
+  <div id="audit" style="max-width:1300px;margin:0 auto;padding:0 24px 96px;">
+    <h2 style="font-size:var(--text-h1);font-weight:800;letter-spacing:-0.01em;margin:0 0 12px;">How Much Are You Overpaying for Software?</h2>
+    <p style="font-size:18px;color:var(--color-text-muted);margin:0 0 32px;max-width:600px;">Tap the tools you currently pay for. We&rsquo;ll estimate your monthly spend &mdash; then tell you what to cut.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:28px;">
+      <sc-for list="{{ tools }}" as="tool" hint-placeholder-count="9">
+        <button onClick="{{ tool.toggle }}" style="{{ tool.chipStyle }}">{{ tool.label }}</button>
+      </sc-for>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;align-items:center;gap:24px;">
+      <div style="font-size:16px;color:var(--color-text-muted);">Estimated spend: <span style="font-size:24px;font-weight:800;color:var(--color-text);">{{ estimateLabel }}</span>/mo</div>
+      <x-import component-from-global-scope="DetailOrientedDesignSystem_2dc586.Button" variant="primary" size="md" onClick="{{ submitAudit }}" hint-size="auto,48px">Get Free Stack Review</x-import>
+    </div>
+    <sc-if value="{{ auditSubmitted }}" hint-placeholder-val="{{ false }}">
+      <p style="margin-top:20px;font-size:15px;color:var(--color-pastel-teal);">Got it &mdash; we&rsquo;ll follow up with a full breakdown by email.</p>
+    </sc-if>
+  </div>
+
+  <div style="background:var(--color-surface);border-top:1px solid var(--color-border);border-bottom:1px solid var(--color-border);">
+    <div id="contact" style="max-width:700px;margin:0 auto;padding:96px 24px;">
+      <h2 style="font-size:var(--text-h1);font-weight:800;letter-spacing:-0.01em;margin:0 0 12px;text-align:center;">Let&rsquo;s clean up your stack.</h2>
+      <p style="font-size:17px;color:var(--color-text-muted);margin:0 0 40px;text-align:center;">Tell us what you&rsquo;re working with &mdash; we&rsquo;ll get back within a day.</p>
+      <sc-if value="{{ formSubmitted }}" hint-placeholder-val="{{ false }}">
+        <p style="text-align:center;font-size:17px;color:var(--color-pastel-teal);padding:40px 0;">Thanks &mdash; message received. We&rsquo;ll be in touch soon.</p>
+      </sc-if>
+      <sc-if value="{{ formNotSubmitted }}" hint-placeholder-val="{{ true }}">
+      <form onSubmit="{{ submitForm }}" style="display:flex;flex-direction:column;gap:16px;">
+        <input type="text" placeholder="Name" required="{{ true }}" style="width:100%;box-sizing:border-box;background:var(--color-surface-2);border:1px solid var(--color-border);color:var(--color-text);padding:14px 16px;font-size:15px;font-family:var(--font-body);border-radius:var(--radius-sm);"/>
+        <input type="email" placeholder="Email" required="{{ true }}" style="width:100%;box-sizing:border-box;background:var(--color-surface-2);border:1px solid var(--color-border);color:var(--color-text);padding:14px 16px;font-size:15px;font-family:var(--font-body);border-radius:var(--radius-sm);"/>
+        <input type="text" placeholder="Business / Company" style="width:100%;box-sizing:border-box;background:var(--color-surface-2);border:1px solid var(--color-border);color:var(--color-text);padding:14px 16px;font-size:15px;font-family:var(--font-body);border-radius:var(--radius-sm);"/>
+        <textarea placeholder="What's going on with your stack?" rows="4" style="width:100%;box-sizing:border-box;background:var(--color-surface-2);border:1px solid var(--color-border);color:var(--color-text);padding:14px 16px;font-size:15px;font-family:var(--font-body);border-radius:var(--radius-sm);resize:vertical;"></textarea>
+        <x-import component-from-global-scope="DetailOrientedDesignSystem_2dc586.Button" variant="solid" size="lg" style="width:100%;text-align:center;box-sizing:border-box;" hint-size="100%,56px">Send it over</x-import>
+      </form>
+      </sc-if>
+      <p style="text-align:center;font-size:15px;color:var(--color-text-faint);margin-top:32px;">Or email directly: <a href="mailto:heather@detailoriented.me">heather@detailoriented.me</a></p>
+    </div>
+  </div>
+
+  <div style="max-width:1300px;margin:0 auto;padding:32px 24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;">
+    <div style="display:flex;align-items:center;gap:10px;">
+      <img src="assets/icon.png" alt="" style="width:20px;height:20px;object-fit:contain;"/>
+      <span style="font-size:13px;font-weight:600;">detail oriented</span>
+    </div>
+    <span style="display:inline-block;font-size:12px;font-weight:700;letter-spacing:0.04em;color:var(--color-ink);background:var(--color-pastel-teal);padding:5px 12px;border-radius:var(--radius-pill);">Powered by detailoriented.me</span>
+    <span style="font-size:13px;color:var(--color-text-faint);">&copy; 2026 Detail Oriented</span>
+  </div>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const TOOLS = [
+  { key: 'notion', label: 'Notion', cost: 10 },
+  { key: 'calendly', label: 'Calendly', cost: 12 },
+  { key: 'wix', label: 'Wix', cost: 27 },
+  { key: 'dubsado', label: 'Dubsado', cost: 35 },
+  { key: 'typeform', label: 'Typeform', cost: 29 },
+  { key: 'excel', label: 'Excel / M365', cost: 7 },
+  { key: 'mailchimp', label: 'Mailchimp', cost: 20 },
+  { key: 'squarespace', label: 'Squarespace', cost: 23 },
+  { key: 'zapier', label: 'Zapier', cost: 20 },
+];
+
+class Component extends DCLogic {
+  state = { selected: {}, auditSubmitted: false, formSubmitted: false };
+
+  toggleTool = (key) => {
+    this.setState((s) => ({ selected: { ...s.selected, [key]: !s.selected[key] } }));
+  };
+
+  submitAudit = () => this.setState({ auditSubmitted: true });
+
+  submitForm = (e) => {
+    e.preventDefault();
+    this.setState({ formSubmitted: true });
+  };
+
+  renderVals() {
+    const { selected } = this.state;
+    let total = 0;
+    const tools = TOOLS.map((t) => {
+      const isSel = !!selected[t.key];
+      if (isSel) total += t.cost;
+      return {
+        key: t.key,
+        label: t.label,
+        toggle: () => this.toggleTool(t.key),
+        chipStyle: isSel
+          ? 'font-family:var(--font-body);font-weight:700;font-size:14px;padding:10px 18px;border-radius:var(--radius-pill);border:1.5px solid var(--color-purple);background:var(--color-purple);color:var(--color-ink);cursor:pointer;'
+          : 'font-family:var(--font-body);font-weight:600;font-size:14px;padding:10px 18px;border-radius:var(--radius-pill);border:1.5px solid var(--color-border);background:transparent;color:var(--color-text-muted);cursor:pointer;',
+      };
+    });
+    return {
+      tools,
+      estimateLabel: '$' + total,
+      auditSubmitted: this.state.auditSubmitted,
+      formSubmitted: this.state.formSubmitted,
+      formNotSubmitted: !this.state.formSubmitted,
+      submitAudit: this.submitAudit,
+      submitForm: this.submitForm,
+    };
+  }
+}
+</script>
+</body>
+</html>

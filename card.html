@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/detail-oriented-design-system-2dc5866c-03f3-49dc-943a-52cd27489990/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/detail-oriented-design-system-2dc5866c-03f3-49dc-943a-52cd27489990/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/detail-oriented-design-system-2dc5866c-03f3-49dc-943a-52cd27489990/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/detail-oriented-design-system-2dc5866c-03f3-49dc-943a-52cd27489990/styles.css">
+  <script src="_ds/detail-oriented-design-system-2dc5866c-03f3-49dc-943a-52cd27489990/_ds_bundle.js"></script>
+  <style>
+    body{margin:0;}
+    a{color:var(--color-purple);text-decoration:none;}
+    a:hover{color:var(--color-pastel-teal);}
+    *:focus-visible{outline:2px solid var(--color-purple);outline-offset:3px;}
+  </style>
+</helmet>
+
+<div style="min-height:100vh;width:100%;background:var(--color-bg);display:flex;justify-content:center;box-sizing:border-box;">
+  <div style="width:100%;max-width:460px;padding:var(--space-6) var(--space-4) var(--space-7);box-sizing:border-box;color:var(--color-text);font-family:var(--font-body);position:relative;">
+
+    <div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:var(--space-1);margin-bottom:var(--space-6);position:relative;">
+      <div style="position:relative;margin-bottom:var(--space-3);">
+        <img src="assets/icon.png" alt="Detail Oriented" style="width:60px;height:60px;object-fit:contain;display:block;"/>
+        <span style="position:absolute;top:-4px;right:-10px;width:8px;height:8px;border-radius:50%;background:var(--color-pastel-pink);"></span>
+      </div>
+      <h1 style="font-size:27px;font-weight:800;letter-spacing:-0.01em;margin:0;color:var(--color-text);">Heather Tully</h1>
+      <p style="font-size:15px;font-weight:600;color:var(--color-purple);margin:6px 0 0;max-width:320px;line-height:1.4;">Small Business Systems &amp; Managed Web Architect</p>
+      <p style="font-size:14px;color:var(--color-text-faint);margin:8px 0 0;">Virginia Beach, VA &nbsp;&middot;&nbsp; &ldquo;Master of &lsquo;some&rsquo;&rdquo;</p>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:var(--space-3);margin-bottom:var(--space-5);">
+
+      <x-import component-from-global-scope="DetailOrientedDesignSystem_2dc586.Button" variant="solid" href="{{ bookingLink }}" style="display:block;width:100%;text-align:left;padding:18px 22px;box-sizing:border-box;" hint-size="100%,84px">
+        <div style="display:flex;align-items:center;gap:14px;">
+          <span style="width:10px;height:10px;border-radius:50%;background:var(--color-ink);flex:none;"></span>
+          <span style="display:block;">
+            <span style="display:block;font-size:16px;font-weight:700;">Book a 1-on-1 Strategy Call</span>
+            <span style="display:block;font-size:13px;font-weight:500;opacity:0.75;margin-top:2px;">30-min intro chat</span>
+          </span>
+        </div>
+      </x-import>
+
+      <x-import component-from-global-scope="DetailOrientedDesignSystem_2dc586.Button" variant="primary" href="Detail Oriented Website.dc.html#starter-hub" style="display:block;width:100%;text-align:left;padding:18px 22px;box-sizing:border-box;" hint-size="100%,84px">
+        <div style="display:flex;align-items:center;gap:14px;">
+          <span style="width:10px;height:10px;background:var(--color-pastel-yellow);flex:none;"></span>
+          <span style="display:block;">
+            <span style="display:block;font-size:16px;font-weight:700;">View Package #1: The Starter Hub ($199/mo)</span>
+            <span style="display:block;font-size:13px;font-weight:500;opacity:0.8;margin-top:2px;">Managed micro-site + stack audit</span>
+          </span>
+        </div>
+      </x-import>
+
+      <x-import component-from-global-scope="DetailOrientedDesignSystem_2dc586.Button" variant="secondary" href="Detail Oriented Website.dc.html#audit" style="display:block;width:100%;text-align:left;padding:18px 22px;box-sizing:border-box;" hint-size="100%,84px">
+        <div style="display:flex;align-items:center;gap:14px;">
+          <span style="width:0;height:0;flex:none;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:10px solid var(--color-pastel-teal);"></span>
+          <span style="display:block;">
+            <span style="display:block;font-size:16px;font-weight:700;">Audit Your Software Stack (Free 60-Sec Tool)</span>
+            <span style="display:block;font-size:13px;font-weight:500;opacity:0.8;margin-top:2px;">Trim redundant SaaS subscriptions</span>
+          </span>
+        </div>
+      </x-import>
+
+      <x-import component-from-global-scope="DetailOrientedDesignSystem_2dc586.Button" variant="secondary" href="mailto:{{ contactEmail }}" style="display:block;width:100%;text-align:left;padding:18px 22px;box-sizing:border-box;" hint-size="100%,72px">
+        <div style="display:flex;align-items:center;gap:14px;">
+          <span style="width:9px;height:9px;background:var(--color-pastel-coral);transform:rotate(45deg);flex:none;"></span>
+          <span style="display:block;">
+            <span style="display:block;font-size:16px;font-weight:700;">Direct Contact</span>
+            <span style="display:block;font-size:13px;font-weight:500;opacity:0.8;margin-top:2px;">Email / Message</span>
+          </span>
+        </div>
+      </x-import>
+
+    </div>
+
+    <x-import component-from-global-scope="DetailOrientedDesignSystem_2dc586.Card" style="margin-bottom:var(--space-5);" hint-size="100%,auto">
+      <p style="font-size:16px;line-height:1.6;margin:0;color:var(--color-text);">I don&rsquo;t want you to overspend on bloated software&mdash;seriously, please do not. We take the tech stress off your plate, build clean custom portals, and manage your web setup so you never get redirected to a dead Facebook page again.</p>
+    </x-import>
+
+    <button onClick="{{ saveVCard }}" style="display:block;width:100%;box-sizing:border-box;padding:17px 22px;border-radius:var(--radius-pill);border:1.5px solid var(--color-text);background:transparent;color:var(--color-text);font-family:var(--font-body);font-weight:700;font-size:15px;cursor:pointer;">Save Contact to Phone (.vCard)</button>
+
+    <p style="text-align:center;font-size:12px;color:var(--color-text-faint);margin:var(--space-4) 0 0;">detailoriented.me</p>
+
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:390,&quot;height&quot;:844},&quot;bookingLink&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://fantastical.app/heathertully/30-minute-intro-call&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Links&quot;},&quot;contactEmail&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;heather@detailoriented.me&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Links&quot;}}">
+class Component extends DCLogic {
+  saveVCard = () => {
+    const lines = [
+      'BEGIN:VCARD',
+      'VERSION:3.0',
+      'FN:Heather Tully',
+      'N:Tully;Heather;;;',
+      'ORG:Detail Oriented',
+      'TITLE:Small Business Systems & Managed Web Architect',
+      'EMAIL;TYPE=INTERNET:' + (this.props.contactEmail || 'heather@detailoriented.me'),
+      'URL:https://detailoriented.me',
+      'ADR;TYPE=WORK:;;Virginia Beach;VA;;;USA',
+      'END:VCARD',
+    ];
+    const blob = new Blob([lines.join('\r\n')], { type: 'text/vcard' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'heather-tully-detail-oriented.vcf';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
+  renderVals() {
+    return {
+      saveVCard: this.saveVCard,
+      bookingLink: this.props.bookingLink || 'https://fantastical.app/heathertully/30-minute-intro-call',
+      contactEmail: this.props.contactEmail || 'heather@detailoriented.me',
+    };
+  }
+}
+</script>
+</body>
+</html>
