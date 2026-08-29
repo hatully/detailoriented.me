@@ -108,15 +108,55 @@
       font-size: 12px;
       color: #666;
     }
-  </style>
+  
+    .tiles {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      width: 100%;
+      margin-bottom: 28px;
+    }
+    .tile {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 12px 10px;
+      text-align: left;
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+    .tile-icon { font-size: 18px; line-height: 1.2; }
+    .tile-text { font-size: 12px; line-height: 1.45; color: var(--text-muted); }
+    .tile-text strong { color: var(--text); font-size: 12.5px; }
+</style>
 </head>
 <body>
   <div class="card-container">
     <img src="https://detailoriented.me/f3a7fcc7-30e6-4785-a4bd-fc4a2bd1b7bb" alt="Detail Oriented" class="logo-mark" onerror="this.style.display='none'">
     <h1 class="name">Heather Tully</h1>
     <div class="company">detail oriented</div>
-    <p class="bio">Building high-performance small business systems, operational automation, and bespoke digital infrastructure.</p>
+    <p class="bio">I build the behind-the-scenes systems that make daily work feel simple and connected — no jargon, no bloated tech stacks, no gatekeepers.</p>
     
+
+    <div class="tiles">
+      <div class="tile">
+        <span class="tile-icon">🔍</span>
+        <div class="tile-text"><strong>Under the Hood</strong><br>Translate confusing tools into simple systems.</div>
+      </div>
+      <div class="tile">
+        <span class="tile-icon">🫰</span>
+        <div class="tile-text"><strong>No Gatekeeping</strong><br>Solid systems for real people, not enterprise bloat.</div>
+      </div>
+      <div class="tile">
+        <span class="tile-icon">🧠</span>
+        <div class="tile-text"><strong>Daily Headspace</strong><br>Clear systems so you do the work, not tech triage.</div>
+      </div>
+      <div class="tile">
+        <span class="tile-icon">🔑</span>
+        <div class="tile-text"><strong>Your Keys</strong><br>Build it with you, so you own it — no dependency.</div>
+      </div>
+    </div>
     <div class="links-grid">
       <a href="https://detailoriented.me" class="btn-link primary">
         <span>Visit Main Website</span>
